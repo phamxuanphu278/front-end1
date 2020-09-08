@@ -1,3 +1,4 @@
+/** Menu */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -14,7 +15,8 @@ function myFunction() {
     document.querySelector(".close-icon").addEventListener('click',function(){
         document.querySelector(".search-screen").classList.remove("active-search");
     });
-
+/** Menu */
+/** countup */
     function countup(el, target) {
       let data = { count: 0 };
       anime({
@@ -49,3 +51,37 @@ function myFunction() {
     const els = document.querySelectorAll('[data-countup]');
     
     els.forEach(makeCountup);
+/** countup */
+/** Tab */
+    var content1 = document.getElementById("content1");
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+
+    var btnTab1 = document.getElementById("btn-tab1");
+    var btnTab2 = document.getElementById("btn-tab2");
+    var btnTab3 = document.getElementById("btn-tab3");
+
+    function openHTML() {
+      content1.style.transform = "translateX(0)";
+      content2.style.transform = "translateX(100%)";
+      content3.style.transform = "translateX(100%)";
+      btnTab1.style.color = "#ff7846";
+      btnTab2.style.color = "#000";
+      btnTab3.style.color = "#000";
+    }
+    function openCSS() {
+      content1.style.transform = "translateX(100%)";
+      content2.style.transform = "translateX(0)";
+      content3.style.transform = "translateX(100%)";
+      btnTab1.style.color = "#000";
+      btnTab2.style.color = "#ff7846";
+      btnTab3.style.color = "#000";
+    }
+    function openJS() {
+      content1.style.transform = "translateX(100%)";
+      content2.style.transform = "translateX(100%)";
+      content3.style.transform = "translateX(0)";
+      btnTab1.style.color = "#000";
+      btnTab2.style.color = "#000";
+      btnTab3.style.color = "#ff7846";
+    }
