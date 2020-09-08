@@ -286,6 +286,39 @@ body {
 .destination h1 {
 	color: #5472ea;
 }
+.destination-popular .destination-country,
+.destination-popular .destination-places {
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+.destination-popular .destination-country {
+  background-color: #5472ea;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 40px;
+  left: 45%;
+}
+.destination-image a img {
+	width: 100%;
+}
+.destination-image:hover .destination-country{
+	background: #000;
+}
+.destination-image:hover .destination-places{
+	background: #d45a5a;
+	border-radius: 40px;
+}
+.des-padd {
+	padding-top: 30px;
+}
+
+
+
 /* Contact */
 /* Counter Up Anime.js*/
 .contact-counter {

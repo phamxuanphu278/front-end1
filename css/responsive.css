@@ -45,6 +45,9 @@
 	.mobile-travel-none {
 		display: none;
 	}
+	.des-padd1, .des-padd2 {
+		padding-top: 30px;
+	}
 }
 @media screen and (max-width: 575px) {
 	.col-anime-2 {
@@ -55,5 +58,8 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.title-travel {
 		margin-top: 15px;
+	}
+	.des-padd1 {
+		padding-top: 30px;
 	}
 }
