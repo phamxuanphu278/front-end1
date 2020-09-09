@@ -48,10 +48,30 @@
 	.des-padd1, .des-padd2 {
 		padding-top: 30px;
 	}
+	.content-left h2 {
+		font-size: 20px;
+	}
+	/* Tours and Resort*/
+	.play-icon { 
+		left: 45%;
+		margin-top: 100px;
+	}
+	.btn-box button {
+		margin-right: 10px;
+	}
+	.tours {
+		margin-bottom: 0;
+	}
+	.hero {
+		margin: 0 0 !important;
+	}
 }
 @media screen and (max-width: 575px) {
 	.col-anime-2 {
 		margin-top: 30px;
+	}
+	.hero {
+		margin: 0 0 !important;
 	}
 } 
 
@@ -61,5 +81,12 @@
 	}
 	.des-padd1 {
 		padding-top: 30px;
+	}
+	.hero {
+		margin: 0 0 !important;
+	}
+	.play-icon { 
+		left: 47%;
+		margin-top: 120px;
 	}
 }
