@@ -117,32 +117,34 @@ function myFunction() {
 
 		var Progress = document.getElementById("progress");
 		
-		Next1.onclick = function() {
+    function next1(){
 			Form1.style.left = "-450px";
 			Form2.style.left = "40px";
 			Progress.style.width = "240px";
 		};
-		Back1.onclick = function() {
+		function back1() {
 			Form1.style.left = "40px";
 			Form2.style.left = "450px";
 			Progress.style.width = "120px";
 		};
-		Next2.onclick = function() {
+		function next2() {
 			Form2.style.left = "-450px";
 			Form3.style.left = "40px";
 			Progress.style.width = "360px";
 		};
-		Back2.onclick = function() {
+		function back2() {
 			Form2.style.left = "40px";
 			Form3.style.left = "450px";
 			Progress.style.width = "240px";
     }
+
+
+// Count down
     const second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
 
-// Count down
 let countDown = new Date('Dec 1, 2020 00:00:00').getTime(),
   x = setInterval(function() {    
     let now = new Date().getTime(),

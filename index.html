@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -314,22 +312,26 @@
     <!-- End Popular Destination -->
     <!-- Discount tour -->
     <div class="countdown-promotions">
-            <div class="countdown-timer22" id="countdown">
-            <h2>Deal Of The Month</h2>
-            <p>20% discount when booking tours for 4 people or more</p>
-                <time class="cd-item">
-                    <span id="days"></span><p>Days</p>
-                </time>
-                <time class="cd-item">
-                    <span id="hours"></span><p>Hours</p>
-                </time>
-                <time class="cd-item">
-                  <span id="minutes"></span><p>Mins</p>
-                </time>
-                <time class="cd-item">
-                    <span id="seconds"></span><p>Secs</p>
-                </time>
-            </div>
+      <div class="countdown-timer22" id="countdown">
+        <h2>Deal Of The Month</h2>
+        <p>20% discount when booking tours for 4 people or more</p>
+        <time class="cd-item">
+          <span id="days"></span>
+          <p>Days</p>
+        </time>
+        <time class="cd-item">
+          <span id="hours"></span>
+          <p>Hours</p>
+        </time>
+        <time class="cd-item">
+          <span id="minutes"></span>
+          <p>Mins</p>
+        </time>
+        <time class="cd-item">
+          <span id="seconds"></span>
+          <p>Secs</p>
+        </time>
+      </div>
     </div>
     <!-- End Discount tour -->
     <!-- Tours and Resort -->
@@ -413,18 +415,58 @@
     <!-- End Tours and Resort -->
     <!-- Recent-trip -->
     <div class="recent-trip">
-    <h1 class="trip-h1">Recent Trip</h1>
-    <p>Suffered alteration in some form, by injected humour or good day</br> randomised booth anim 8-bit
-      hella wolf moon beard words.</p>
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="img/1.png" alt="paris">
+      <h1 class="trip-h1">Recent Trip</h1>
+      <p class="text-trip">Suffered alteration in some form, by injected humour or good day</br> randomised booth anim
+        8-bit
+        hella wolf moon beard words.</p>
+      <div class="row choice_inner">
+        <div class="col-lg-4 col-md-6">
+          <div class="choice_item">
+            <img class="img-fluid" src="img/blog/chhoice1.png" alt="">
+            <div class="choice_text">
+              <div class="date">
+                <a class="gad_btn" href="#">Gadgets</a>
+                <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>July 14, 2020</a>
+                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
+              </div>
+              <a href="#">
+                <h4>Myspace Layouts The Missing Element already</h4>
+              </a>
+              <p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-            <img src="img/2.png" alt="american">
+        <div class="col-lg-4 col-md-6">
+          <div class="choice_item">
+            <img class="img-fluid" src="img/blog/choice-4.jpg" alt="">
+            <div class="choice_text">
+              <div class="date">
+                <a class="gad_btn" href="#">Gadgets</a>
+                <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>July 14, 2020</a>
+                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
+              </div>
+              <a href="#">
+                <h4>Myspace Layouts The Missing Element already</h4>
+              </a>
+              <p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-            <img src="img/3.png" alt="speed">
+        <div class="col-lg-4 col-md-6">
+          <div class="choice_item">
+            <img class="img-fluid" src="img/blog/choice-3.jpg" alt="">
+            <div class="choice_text">
+              <div class="date">
+                <a class="gad_btn" href="#">Gadgets</a>
+                <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>July 14, 2020</a>
+                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>05</a>
+              </div>
+              <a href="#">
+                <h4>Myspace Layouts The Missing Element already</h4>
+              </a>
+              <p>Planning to visit Las Vegas or any other vacational resort where casinos</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -442,7 +484,7 @@
           <input type="text" placeholder="Travel type" required>
 
           <div class="btn-form-booktour">
-            <button type="button" id="next1">Next</button>
+            <button type="button" onclick="next1()">Next</button>
           </div>
         </form>
 
@@ -453,8 +495,8 @@
           <input type="text" placeholder="People">
 
           <div class="btn-form-booktour">
-            <button type="button" id="back1">Back</button>
-            <button type="button" id="next2">Next</button>
+            <button type="button" onclick="back1()">Back</button>
+            <button type="button" onclick="next2()">Next</button>
           </div>
         </form>
 
@@ -465,7 +507,7 @@
           <input type="text" placeholder="Numberphone" required>
 
           <div class="btn-form-booktour">
-            <button type="button" id="back2">Back</button>
+            <button type="button" onclick="back2()">Back</button>
             <button type="button">Submit</button>
           </div>
         </form>
@@ -522,7 +564,8 @@
     <!--End CounterUp anime.js -->
     <!-- Subscribe -->
     <div id="colorlib-subscribe">
-      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+          class="fa fa-star"></i></span>
       <h2>Sign Up for a Newsletter</h2>
       <p>Get A 50% Discounts in every Rooms, Book now!</p>
       <form class="form-inline">
@@ -533,26 +576,26 @@
       </form>
     </div>
     <!-- End Subscribe -->
-  <!-- Slider -->
-  <div class="swiper-container swiper-2">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company1.png" alt="company1" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company2.png" alt="company2" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company3.png" alt="company3" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company4.png" alt="company4" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company8.png" alt="company5" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company6.png" alt="company6" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide2"><img src="img/icon/company7.png" alt="company7" class="img-responsive">
+    <!-- Slider -->
+    <div class="swiper-container swiper-2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company1.png" alt="company1" class="img-responsive">
+        </div>
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company2.png" alt="company2" class="img-responsive">
+        </div>
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company3.png" alt="company3" class="img-responsive">
+        </div>
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company4.png" alt="company4" class="img-responsive">
+        </div>
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company8.png" alt="company5" class="img-responsive">
+        </div>
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company6.png" alt="company6" class="img-responsive">
+        </div>
+        <div class="swiper-slide swiper-slide2"><img src="img/icon/company7.png" alt="company7" class="img-responsive">
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End Slider -->
+    <!-- End Slider -->
   </div>
   <!-- Footer -->
   <footer class="footer-area">
@@ -642,5 +685,3 @@
   <script src="js/main-jquery.js"></script>
 
 </body>
-
-</html>
