@@ -65,6 +65,12 @@
 	.hero {
 		margin: 0 0 !important;
 	}
+	.instafeed {
+		margin: -16px; 
+	} 
+	.form-group {
+		left: 20% !important;
+	}
 }
 @media screen and (max-width: 575px) {
 	.col-anime-2 {
@@ -88,5 +94,54 @@
 	.play-icon { 
 		left: 47%;
 		margin-top: 120px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.footer-area .col-footer-all:nth-child(3) .single-footer-widget, 
+	.footer-area .col-footer-all:nth-child(4) .single-footer-widget {
+		margin-bottom: 0; 
+	} 
+	.footer-social {
+		text-align: left; 
+	}
+	.single-footer-widget {
+		margin-bottom: 40px; 
+	}
+	.form-group {
+		left: 27%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.instafeed {
+		margin: 0px;
+		padding: 0; 
+	} 
+	.footer-social a:first-child {
+		padding-left: 0; 
+	}
+	.footer-bottom {
+		padding: 26px 15px; 
+	}
+	.footer-social {
+		margin-top: 15px; 
+	}
+	.footer-area .col-footer-all:nth-child(3) .single-footer-widget {
+		margin-bottom: 40px; 
+	}
+	.form-inline {
+		padding-top: 50px;
+	}
+	.form-group {
+		left: 20% !important;
+	}
+	.form-group input {
+		width: 80%;
+	}
+	.form-group button {
+		position: absolute;
+		top: 0;
+		left: 70%;
 	}
 }

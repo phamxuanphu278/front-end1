@@ -10,6 +10,34 @@ jQuery(document).ready( function($){
           prevEl: '.prev-buttons',
         },
     });
+    var swiper2 = new Swiper('.swiper-2', {
+      slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+        },
+    });
 });
 
 $(window).on('load', function () {
