@@ -155,3 +155,4 @@ let countDown = new Date('Dec 1, 2020 00:00:00').getTime(),
       document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
       document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
   }, second);
+
