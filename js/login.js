@@ -19,6 +19,15 @@
     z.style.left = "0";
   }
 
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 document.querySelector(".search-icon").addEventListener('click',function(){
     document.querySelector(".search-screen").classList.add("active-search");
 });

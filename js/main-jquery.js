@@ -38,6 +38,38 @@ jQuery(document).ready( function($){
             },
         },
     });
+    var swiper3 = new Swiper('.swiper-blog', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+      },
+      pagination: {
+        el: '.pagination-blog-cmt',
+        clickable: true,
+      },
+      breakpoints: {
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+    });
 });
 
 $(window).on('load', function () {

@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 /*Top Header*/
 .top-header {
 	background: #5472ea;
@@ -1282,14 +1286,6 @@
 .news-cnn {
 	margin-bottom: 30px;
 }
-.dot {
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-top: 2px !important;
-    background-color: rgb(207, 23, 23);
-    border-radius: 50%;
-    display: inline-block;
-}
 .section-title {
     background: #f9f9ff;
     border-left: 4px solid #5472ea;
@@ -1455,4 +1451,112 @@
 }
 .pagination-blog span:last-child {
 	margin-right: 0;
+}
+/* Comments Blog*/
+.swiper-blog {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+}
+.slide-blog {
+	border: 1px solid #999;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 40px !important;
+}
+.slide-blog img {
+	width: 70%;
+	border-radius: 50%;
+}
+.swiper-pagination-bullet {
+	padding: 5px;
+	box-shadow: 0 2px 7px #5472ea;
+}
+.comment-bycustomer {
+	color: #5472ea;
+	font-weight: bold;
+}
+#myVideo {
+	width: 100%;
+}
+.blog-video {
+	position: relative;
+}
+.h1-blog-news {
+	position: absolute;
+	color: #5472ea;
+	top: 40%;
+	font-size: 80px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Video Review*/
+.feature-blog-img img:nth-child(1) {
+    width: 100%;
+}
+.small-blogger-row:nth-child(1) {
+    margin-top: 0;
+}
+.small-blogger-row:last-child {
+    margin-bottom: 0;
+}
+.small-blogger-row {
+    display: flex;
+    background: #efefef;
+	margin: 20px 0;
+	padding: 7px 5px;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.small-blogger-row p {
+    color: #999;
+    line-height: 22px;
+    font-size: 15px;
+}
+.small-blooger-img {
+    margin-right: 10px;
+    position: relative;
+}
+.small-blooger-img img {
+    width: 150px;
+}
+.feature-blog-img {
+	position: relative;
+}
+.play-video-blogger {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.small-blooger-img .play-video-blogger {
+    width: 35px;
+}
+.video-relative {
+	position: relative;
+}
+.video-blog-player {
+    width: 80%;
+	position: absolute;
+	z-index: 10;
+    left: 50%;
+    top: -230px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+video:focus {
+    outline: none;
+}
+.close-video-blogger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+	cursor: pointer;
+}
+.row-video-review {
+	margin-bottom: 30px;
 }
