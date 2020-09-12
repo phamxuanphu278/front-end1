@@ -71,6 +71,110 @@
         </div>
     </header>
     <!-- End Menu Header -->
+    <div class="container">
+        <!-- About Us -->
+        <h2 class="company-aboutus">We are a company that is famous for organizing tours</h2>
+        <div class="row row-about-company">
+            <div class="col-lg-6">
+                <div class="about-company">
+                    <div class="about-uscompany">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis vel,
+                            accusantium illo inventore deleniti doloribus eius asperiores id. Quibusdam beatae,
+                            dolor excepturi quisquam consectetur natus minima accusantium. Reprehenderit, voluptate?</p>
+                        <div class="expanded">
+                            <div class="expand-img"><img src="img/cty.jpg" alt="homework"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quaerat quis ullam
+                                corrupti iure ratione reiciendis
+                                corporis quisquam sed voluptate dolor repellendus, consequuntur facere, est, saepe
+                                maiores? Consequatur,
+                                possimus doloribus.</p>
+                        </div>
+                        <a href="#" class="read-more-aboutus">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="img-company">
+                    <img src="img/company.jpg" alt="company">
+                </div>
+            </div>
+        </div>
+        <!-- End About Us -->
+        <!-- Popular Service -->
+        <div class="section-title">
+            <h2>Popular services that we offer</h2>
+        </div>
+        <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <span class="flaticon-bed"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <img src="img/about/restaurant.png" alt="">
+                            <h5><a href="#">Leving Hotel</a></h5>
+                            <p>Must explain your how this keind denoun pleasure</p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <span class="flaticon-drink"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <img src="img/about/resort.png" alt="">
+                            <h5><a href="#">Weekend trips</a></h5>
+                            <p>Must explain your how this keind denoun pleasure</p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <span class="flaticon-home"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <img src="img/about/plane.png" alt="">
+                            <h5><a href="#">Plane tickets</a></h5>
+                            <p>Must explain your how this keind denoun pleasure</p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <span class="flaticon-food"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <img src="img/about/travel.png" alt="">
+                            <h5><a href="#">Fun leisure trips</a></h5>
+                            <p>Must explain your how this keind denoun pleasure</p>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        <!-- End Popular Service -->
+    </div>
+
+    <!-- Subscribe -->
+    <div id="colorlib-subscribe">
+        <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i></span>
+        <h2>Sign Up for a Newsletter</h2>
+        <p>Get A 50% Discounts in every Rooms, Book now!</p>
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Subscribe -->
     <!-- Footer -->
     <footer class="footer-area">
         <div class="container">
@@ -153,4 +257,29 @@
     </footer>
     <!-- End Footer -->
     <script src="js/login.js"></script>
+    <script>
+        var toggleVisibility = function (event) {
+            event.preventDefault();
+            var expandedContent = event.target.previousElementSibling;
+            if (!expandedContent || !expandedContent.classList.contains("expanded")) {
+                return;
+            }
+
+            if (expandedContent.style.display == 'block') {
+                expandedContent.classList.remove('animated', 'slideInUp');
+                expandedContent.classList.add('animated', 'slideOutDown');
+                expandedContent.style.display = 'none';
+                event.target.innerHTML = 'Read More';
+            } else {
+                expandedContent.classList.remove('animated', 'slideOutDown');
+                expandedContent.classList.add('animated', 'slideInUp');
+                expandedContent.style.display = 'block';
+                event.target.innerHTML = 'Read Less';
+            }
+        };
+
+        var aboutSection = document.getElementsByClassName('about-company')[0];
+
+        aboutSection.addEventListener('click', toggleVisibility);
+    </script>
 </body>
