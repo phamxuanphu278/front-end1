@@ -70,6 +70,7 @@ jQuery(document).ready( function($){
         },
     },
     });
+
 });
 
 $(window).on('load', function () {
@@ -79,3 +80,5 @@ $(window).on('load', function () {
     });
   }
 });
+
+

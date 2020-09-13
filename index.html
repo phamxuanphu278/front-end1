@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/hes-gallery.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -240,74 +241,16 @@
       <h1>Popular Destination</h1>
       <p>Suffered alteration in some form, by injected humour or good day</br> randomised booth anim 8-bit
         hella wolf moon beard words.</p>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="destination-popular">
-            <div class="destination-image">
-              <a href="#">
-                <img class="img-responsive" alt="pic-1" src="img/halong.jpg" />
-              </a>
-              <span class="destination-country">07 Places</span>
-              <span class="destination-places">Viet Nam</span>
-            </div>
-          </div>
+        <div class="hes-gallery">
+            <img src="img/halong.jpg" alt="image1" data-fullsize="img/halong.jpg" data-subtext='Vinh Ha Long - Vietnam'>
+            <img src="img/sydney.jpg" alt="image2" data-subtext="Sydney - Australia">
+            <img src="img/thailand.jpg" alt="image3" data-subtext="Wat Phra Kaew - Thailand">
+            <img src="img/amazon.jpg" alt="image4" data-subtext="Amazon - Brazil" >
+            <img src="img/milan.jpg" alt="image5" data-subtext='Milan - Italia'>
+            <img src="img/london.jpg" alt="image6" data-subtext="London - England">
+            <img src="img/nga.jpg" alt="image7" data-subtext="Moscow - Russia">
+            <img src="img/pisa.jpg" alt="image8" data-subtext="Piazza del Duomo - Italia" >
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="destination-popular des-padd2">
-            <div class="destination-image">
-              <a href="#">
-                <img class="img-responsive" alt="pic-1" src="img/london.jpg" />
-              </a>
-              <span class="destination-country">10 Places</span>
-              <span class="destination-places">England</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="destination-popular des-padd1">
-            <div class="destination-image">
-              <a href="#">
-                <img class="img-responsive" alt="pic-1" src="img/nga.jpg" />
-              </a>
-              <span class="destination-country">04 Places</span>
-              <span class="destination-places">Rusia</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="destination-popular des-padd">
-            <div class="destination-image">
-              <a href="#">
-                <img class="img-responsive" alt="pic-1" src="img/nga.jpg" />
-              </a>
-              <span class="destination-country">04 Places</span>
-              <span class="destination-places">Rusia</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="destination-popular des-padd">
-            <div class="destination-image">
-              <a href="#">
-                <img class="img-responsive" alt="pic-1" src="img/halong.jpg" />
-              </a>
-              <span class="destination-country">07 Places</span>
-              <span class="destination-places">Viet Nam</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="destination-popular des-padd">
-            <div class="destination-image">
-              <a href="#">
-                <img class="img-responsive" alt="pic-1" src="img/22.jpg" />
-              </a>
-              <span class="destination-country">03 Places</span>
-              <span class="destination-places">China</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- End Popular Destination -->
     <!-- Discount tour -->
@@ -597,6 +540,9 @@
     </div>
     <!-- End Slider -->
   </div>
+  <!-- go to Top -->
+  <button id="topBtn"><i class="fa fa-arrow-up"></i></button>
+  <!-- End go to Top -->
   <!-- Footer -->
   <footer class="footer-area">
     <div class="container">
@@ -680,8 +626,21 @@
   <!-- import javascript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/hes-gallery.js"></script>
   <script src="js/anime.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/main-jquery.js"></script>
+  <script src="js/about.js"></script>
+  <script>
 
+      HesGallery.setOptions({
+          disableScrolling: false,
+          hostedStyles: false,
+          animations: true,
+
+          showImageCount: true,
+          wrapAround: true
+      });
+
+  </script>
 </body>
