@@ -156,3 +156,47 @@ let countDown = new Date('Dec 1, 2020 00:00:00').getTime(),
       document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
   }, second);
 
+// Get modal element
+var modal = document.getElementById('simpleModal');
+// Get open modal button
+var modalBtn1 = document.getElementById('modalBtn1');
+var modalBtn2 = document.getElementById('modalBtn2');
+var modalBtn3 = document.getElementById('modalBtn3');
+var modalBtn4 = document.getElementById('modalBtn4');
+var modalBtn5 = document.getElementById('modalBtn5');
+var modalBtn6 = document.getElementById('modalBtn6');
+var modalBtn7 = document.getElementById('modalBtn7');
+var modalBtn8 = document.getElementById('modalBtn8');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+// Listen for open click
+modalBtn1.addEventListener('click', openModal);
+modalBtn2.addEventListener('click', openModal);
+modalBtn3.addEventListener('click', openModal);
+modalBtn4.addEventListener('click', openModal);
+modalBtn5.addEventListener('click', openModal);
+modalBtn6.addEventListener('click', openModal);
+modalBtn7.addEventListener('click', openModal);
+modalBtn8.addEventListener('click', openModal);
+// Listen for close click
+closeBtn.addEventListener('click', closeModal);
+// Listen for outside click
+window.addEventListener('click', outsideClick);
+
+// Open modal
+function openModal(){
+  modal.style.display = 'block';
+}
+
+// Close modal
+function closeModal(){
+  modal.style.display = 'none';
+}
+
+// Click outside and close
+function outsideClick(e){
+  if(e.target == modal){
+    modal.style.display = 'none';
+  }
+}

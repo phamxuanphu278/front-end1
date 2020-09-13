@@ -94,6 +94,9 @@
 	.my-card {
 		left: 45% !important;
 	}
+	.featured__item__pic {
+		height: 250px;
+	}
 }
 @media screen and (max-width: 575px) {
 	.col-anime-2 {
@@ -103,7 +106,12 @@
 		margin: 0 0 !important;
 	}
 } 
-
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+	.featured__item__pic {
+		height: 220px;
+	}
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.title-travel {
 		margin-top: 15px;
@@ -135,6 +143,9 @@
 	}
 	.my-card {
 		left: 45% !important;
+	}
+	.featured__item__pic {
+		height: 220px;
 	}
 }
 

@@ -268,6 +268,7 @@
 		bottom: 100%;
    }
 }
+
 /*End Slider*/
 /* Journey icon */
 .icon-journey {
@@ -457,6 +458,184 @@
 	100% {
 		box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.3),  0 0 0 20px rgba(255, 0, 0, 0.3);
    }
+}
+/* Popular Places*/
+.popular-places {
+	margin-bottom: 30px;
+}
+.popular-places h1 {
+	color: #5472ea;
+	text-align: center;
+}
+.popular-places p {
+	text-align: center;
+}
+.featured__controls {
+	text-align: center;
+}
+.featured__controls ul li {
+	list-style: none;
+	font-size: 18px;
+	color: #1c1c1c;
+	display: inline-block;
+	margin-right: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+.featured__controls ul li.active:after {
+	opacity: 1;
+}
+
+.featured__controls ul li:after {
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: #5472ea;
+	content: "";
+	opacity: 0;
+}
+.set-bg img {
+	width: 100%;
+}
+.featured__controls ul li:last-child {
+	margin-right: 0;
+}
+
+.featured__item {
+	margin-bottom: 50px;
+}
+
+.featured__item:hover .featured__item__pic__hover {
+	bottom: 20px;
+}
+
+.featured__item__pic {
+	height: 270px;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+}
+
+.featured__item__pic__hover {
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	width: 100%;
+	transition: all, 0.5s;
+	text-align: center;
+}
+
+.featured__item__pic__hover li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 6px;
+	text-align: center;
+}
+
+.featured__item__pic__hover li:last-child {
+	margin-right: 0;
+}
+
+.featured__item__pic__hover li:hover a {
+	background: #5472ea;
+	border-color: #5472ea;
+}
+
+.featured__item__pic__hover li:hover a i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+.featured__item__text  .fa {
+	color: #f8b600;
+	letter-spacing: 4px;
+}
+.featured__item__pic__hover li a {
+	font-size: 16px;
+	color: #1c1c1c;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border: 1px solid #ebebeb;
+	background: #ffffff;
+	display: block;
+	border-radius: 50%;
+	transition: all, 0.5s;
+	text-decoration: none;
+}
+.featured__item__text h5 a {
+	text-decoration: none;
+	color: #5472ea;
+}
+.featured__item__pic__hover li a i {
+	position: relative;
+	transform: rotate(0);
+	transition: all, 0.3s;
+}
+.featured__item__text {
+	padding-top: 15px;
+}
+
+/* Modal Popup*/
+.modal-overlay{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	z-index: 9;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+	background-color: #f4f4f4;
+	margin: 15% auto;
+	width: 70%;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.modal-header h2, .modal-footer h3{
+	margin: 0;
+}
+
+.modal-header{
+	background: #5472ea;
+	padding: 15px;
+	color: #fff;
+}
+
+.modal-body{
+	padding: 10px 20px;
+}
+
+.closeBtn{
+	font-size: 25px;
+	color: #fff;
+	padding: 0 9px;
+	border-radius: 50%;
+	background: #fff;
+	color: #5472ea;
+	float: right;
+	cursor: pointer;
+	position: absolute;
+	right: -12px;
+	top: -10px;
+}
+.follow-me a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 7px;
+}
+.facebook-follow {
+	margin-left: 10px;
+	background: #5472ea;
+}
+.facebook-follow i {
+	margin-right: 5px;
 }
 /* Book tour now*/
 .book-tour {
@@ -1534,7 +1713,8 @@
     width: 80%;
 	position: absolute;
 	z-index: 10;
-    left: 50%;
+	left: 50%;
+	overflow: auto;
 	top: -230px;
     transform: translate(-50%, -50%);
     display: none;
